@@ -8,7 +8,7 @@ function Temperature(props) {
     const [search, setSearch] = React.useState("delhi");
 
     useEffect(() => {
-        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=806dec7705832cf531a55c31abe6ef37`)
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=2e2ea8cc061714b46e1c6e121dccca9f`)
             .then(res => {
                 const data = res.data
                 setCity(data.main)
