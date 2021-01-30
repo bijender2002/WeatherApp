@@ -12,7 +12,7 @@ function Temperature(props) {
             .then(res => {
                 const data = res.data
                 setCity(data.main)
-                console.log(data.main)
+               
 
             })
             .catch(err => {
